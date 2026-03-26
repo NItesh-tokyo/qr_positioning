@@ -6,17 +6,17 @@ function toggleScanner() {
     if (scannerOn) {
         startScanner();
         mapContainer.style.display = "none";
-        btn.innerText = "CANCEl";
+        btn.innerText = "CANCEL";
     } else {
-    stopScanner();
-    mapContainer.style.display = "block";
-    btn.innerText = "SCAN";
+        stopScanner();
+        mapContainer.style.display = "block";
+        btn.innerText = "SCAN";
     }
 }
 
 function startScanner() {
     reader.start(
-        { facingMode: "environment"},
+        { facingMode: "environment" },
         {},
         function (text) {
             const place = JSON.parse(text);
@@ -31,6 +31,7 @@ function startScanner() {
 function stopScanner() {
     reader.stop();
 }
+
 function showMarkerAt(top, left) {
     marker.style.top = top;
     marker.style.left = left;
