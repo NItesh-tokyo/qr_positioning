@@ -43,7 +43,7 @@ function showMarkerAt(top, left) {
 function showInventory(item) {
     document.getElementById("itemName").textContent = "Name:" = item.name;
     document.getElementById("itemStock").textContent = "In Stock:" +
-    (item.inStock ? "yes ✔️" : "No X");
+    (item.inStock ? "yes" : "No");
     document.getElementById("itemPrice").textCOntent = "price: €" + item.price;
     document.getElementById("inventory").style.display = "block";
 }
