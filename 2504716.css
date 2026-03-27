@@ -19,12 +19,12 @@ h1 {
 }
 
 #marker {
-    width: 3vw; /* 3% of the viewport width */
+    width: 3vw;
     height: 3vw;
     background-color: black;
     border-radius: 50%;
-    outline: 5px solid var(--theme); /* does not affect the size */
-    border: 5px solid white; /* affects the size */
+    outline: 5px solid var(--theme);
+    border: 5px solid white;
     position: absolute;
     top: 0;
     left: 0;
@@ -40,7 +40,7 @@ h1 {
     width: 100%;
 }
 
-/* button styling*/
+/* Button Styling */
 #btn {
     background-color: var(--theme);
     color: white;
@@ -48,25 +48,26 @@ h1 {
     font-weight: bold;
     font-family: "Arial";
     padding: 15px 40px;
+    border: none;
     border-radius: 8px;
     margin: 20px;
-    box-shadow: 0 4px 6px rgna(0, 0, 0, 0.3);
-
-    transition: all 0.3 ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
 }
+
 #btn:hover {
     cursor: pointer;
-    background-color: #3a0;  /* Lighter green on hover */
-    transform: scale(1.05);  /* Slightly larger */
+    background-color: #3a0;
+    transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
-/* Optional: Active state when clicking */
 #btn:active {
     transform: scale(0.98);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-
 }
+
+/* Inventory Display Styling */
 #inventory {
     display: none;
     font-family: "Arial";
